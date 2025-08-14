@@ -10,11 +10,13 @@ function UserList({ users }) {
     }}>
       {users.map((user) => (
         <UserCard
-          key={user.id}
-          name={user.name}
-          username={user.username}
-          email={user.email}
-        />
+        key={user.id}
+        id={user.id} // ✅ pass id
+        name={user.name}
+        username={user.username}
+        email={user.email}
+      />
+      
       ))}
     </div>
   );
